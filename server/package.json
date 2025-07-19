@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend for a video streaming app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranav-Malao/Prime-Call.git"
+  },
+  "author": "PM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pranav-Malao/Prime-Call/issues"
+  },
+  "homepage": "https://github.com/Pranav-Malao/Prime-Call#readme"
+}
