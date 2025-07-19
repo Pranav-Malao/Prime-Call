@@ -20,4 +20,8 @@ io.on('connection', (socket) => {
     socket.join(roomId);
     io.to(socket.id).emit("joined-room", data);
   });
+
+  socket.on("user-call", ({ to, offer }) => {
+    io.to(to).emit("incoming-call", { from: socket.id, offer });
+  });
 });
