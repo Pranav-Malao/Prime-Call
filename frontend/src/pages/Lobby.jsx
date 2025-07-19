@@ -40,9 +40,11 @@ function Lobby() {
   }, [socket, handleJoinRoom]);
 
   return (
+
     <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-md p-8 border border-gray-300 rounded-lg shadow">
-        <h2>Join a Room</h2>
+        <h1 className="text-center w-full mb-3 border-b-2">Lobby</h1>
+        <h2 className='text-bold text-3xl mb-2'>Join a Room</h2>
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: '1rem' }}>
             <label>
@@ -86,6 +88,7 @@ function Lobby() {
         </form>
       </div>
     </div>
+
   );
 }
 
