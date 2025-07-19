@@ -12,6 +12,7 @@ function Room() {
 
   const handleUserJoined = useCallback(({ name, id }) => {
     console.log(`User ${name} joined room`);
+    alert(`User ${name} joined room !!`);
     setRemoteSocketId(id);
   }, []);
 
@@ -132,7 +133,7 @@ function Room() {
     <div>
       <h1>Room Page</h1>
       <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
-      {myStream && <button onClick={sendStreams}>Send Stream</button>}
+      {myStream && <button onClick={sendStreams}>Accept</button>}
       {remoteSocketId && <button onClick={handleCallUser}>CALL</button>}
       {myStream && (
         <>
